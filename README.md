@@ -9,6 +9,6 @@ Based on colorschemes:
 
 ## Install
 
-Or use your preferred plugin manager.
+Use your preferred plugin manager.
 
 Or copy `colors/futon.vim` and `doc/futon.txt` in your path.
