@@ -1,6 +1,6 @@
-# vim: ft=colortemplate fdm=marker
+; vim: ft=colortemplate fdm=marker
 
-# Information {{{
+; Information {{{
 Full name:   Futon
 Short name:  futon
 Author:      Cinghio Pinghio
@@ -8,13 +8,13 @@ Website:     https://github.com/cinghiopinghio/futon.vim
 Description: Colorless color scheme for Vim inspired by Photon
 License:     This file is placed in the public domain
 Neovim:      yes
-# }}}
+; }}}
 
-# Documentation {{{
+; Documentation {{{
 Include: _help.colortemplate
-# }}}
+; }}}
 
-# Common linked groups {{{
+; Common linked groups {{{
 Repeat            -> Statement
 Conditional       -> Statement
 Exception         -> Statement
@@ -27,203 +27,15 @@ PreCondit         -> PreProc
 Tag               -> Special
 Typedef           -> Type
 lCursor           -> Cursor
-# }}}
+; }}}
 
 Background: dark
+Include: _palette_dark.colortemplate
 
-# Color palette {{{
-# Color name                GUI                  Base256    Base16
+Background: light
+Include: _palette_light.colortemplate
 
-Color: bg0    #262626    235 Black
-
-    #  Lighter background shades
-Color: darkl_1 #303030    236 DarkGray
-Color: darkl_2 #3a3a3a    237 DarkGray
-Color: darkl_3 #444444    238 DarkGray
-Color: darkl_4 #626262    241 DarkGray
-
-    #  Foreground
-Color: light   #c6c6c6    251 White
-
-Color: light_1 #b2b2b2    249 LightGrey
-Color: light_2 #a8a8a8    248 LightGrey
-Color: light_3 #9e9e9e    247 LightGrey
-Color: light_4 #8a8a8a    245 LightGrey
-
-    #  Accents
-Color: grey    #767676    243 DarkGray
-Color: purple  #af87d7    140 DarkMagenta
-Color: orange  #d75f00    166 Red
-Color: yellow  #af8700    136 DarkYellow
-Color: green   #87af87    108 DarkGreen
-Color: blue    #5f87d7    68  Blue
-Color: red     #d70000    160 DarkRed
-
-Color:    xdblack   #262626 ~
-Color:    xdred     #af0000 ~
-Color:    xdgreen   #878700 ~
-Color:    xdyellow  #d78700 ~
-Color:    xdblue    #5f87af ~
-Color:    xdmagenta #af5fd7 ~
-Color:    xdcyan    #5f8787 ~
-Color:    xdwhite   #a8a8a8 ~
-
-Color:    xlblack   #6c6c6c ~
-Color:    xlred     #d75f00 ~
-Color:    xlgreen   #afaf00 ~
-Color:    xlyellow  #ffaf00 ~
-Color:    xlblue    #5fafd7 ~
-Color:    xlmagenta #af87d7 ~
-Color:    xlcyan    #5fafaf ~
-Color:    xlwhite   #eeeeee ~
-
-Term Colors: bg0 red green yellow blue purple orange light
-# here should go the light versions
-Term Colors: bg0 red green yellow blue purple orange light
-# }}}
-
-# Default highlight groups {{{
-Variant: gui
-#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
-Variant: 256 8
-#if get(g:, '@optionprefix_transp_bg', 0)
-Variant: gui 256 8
-    Normal       light  none
-    CursorLineNr purple none
-    FoldColumn   grey   none
-    LineNr       grey   none
-    Terminal     light  none
-#else
-    Normal       light  bg0
-    CursorLineNr purple darkl_1
-    FoldColumn   grey   darkl_1
-    LineNr       grey   darkl_1
-    Terminal     light  bg0
-#endif
-# Group              Foreground        Background        Attributes
-ColorColumn       none       darkl_1
-CursorColumn      ->         ColorColumn
-CursorLine        ->         ColorColumn
-Cursor            light      purple
-Conceal           purple     none
-
-Folded            grey       darkl_1      italic
-
-DiffAdd           green      none         reverse
-DiffChange        yellow     none         reverse
-DiffDelete        red        none         reverse
-DiffText          orange     none         bold,reverse
-diffAdded         ->         DiffAdd
-diffRemoved       ->         DiffDelete
-
-EndOfBuffer       darkl_1    none
-
-Error             red        light        reverse
-ErrorMsg          ->         Error
-Warning           yellow     none         reverse
-WarningMsg        ->         Warning
-
-IncSearch         orange     none         t=reverse g=standout
-MatchParen        none yellow         bold
-Search            purple     none         reverse
-
-Directory         purple     none
-
-ModeMsg           light      none
-MoreMsg           light_1    none
-Question          ->         MoreMsg
-NonText           light      none
-Ignore            ->         NonText
-
-Pmenu             none       darkl_2
-PmenuSbar         none       darkl_1
-PmenuSel          purple     darkl_1
-PmenuThumb        none       orange
-WildMenu          orange     none
-
-SignColumn        grey       none
-SpecialKey        ->         SignColumn
-SpellBad          red        none         s=red     t=underline g=undercurl
-SpellCap          green      none         s=red     t=underline g=undercurl
-SpellLocal        blue       none         s=red     t=underline g=undercurl
-SpellRare         yellow     none         s=red     t=underline g=undercurl
-
-StatusLine        ->         Normal
-StatusLineNC      ->         Comment
-TabLine           ->         StatusLineNC
-TabLineFill       ->         StatusLineNC
-TabLineSel        ->         StatusLine
-
-Title             none       none         bold
-
-VertSplit         darkl_1    darkl_1
-Visual            none darkl_3
-VisualNOS         none darkl_3
-
-#                 Other      conventional group     names       (see `:help group-name`)
-Constant          purple     none
-Boolean           ->         Constant
-Character         ->         Constant
-Number            ->         Constant
-Float             ->         Number
-String            ->         Constant
-
-Special           none       none bold
-SpecialChar       ->         Special
-SpecialComment    ->         Special
-Delimiter         ->         Special
-Debug             ->         Special
-
-Comment           grey       none         italic
-Whitespace -> Comment
-
-Identifier        ->         Constant
-Function          ->         Identifier
-
-PreProc           grey       none
-Include           ->         PreProc
-
-Statement         grey       none
-Label             ->         Statement
-Keyword           ->         Statement
-
-Operator          -> Statement
-
-Type              purple     none
-StorageClass      ->         Type
-Structure         ->         Type
-
-Todo              orange     none         bold
-Underlined        none       none         underline
-CursorIM          none       none         reverse
-
-helpHyperTextJump purple     none         reverse
-htmlTag           ->         Constant
-htmlTagName       ->         htmlTag
-htmlEndTag        ->         htmlTag
-htmlSpecialTagName        ->         htmlTag
-gitcommitSummary  ->         Title
-#                 }}}
-
-#                 Additional highlight    groups    {{{
-NormalMode        purple     none         reverse
-InsertMode        green      none         reverse
-ReplaceMode       orange     none         reverse
-VisualMode        blue       none         reverse
-CommandMode       red    none         reverse
-#                 }}}
-
-#                 NeoVim     {{{
-TermCursor        ->         Cursor
-TermCursorNC      ->         CursorColumn
-# }}}
-
-# Markdown {{{
-markdownBold none none bold
-markdownItalic none none italic
-markdownError -> Error
-# }}}
-
-# B&W Variant {{{
+Background: any
+; B&W Variant {{{
 Include: _bw.colortemplate
-# }}}
+; }}}

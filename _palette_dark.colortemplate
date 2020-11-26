@@ -1,0 +1,47 @@
+; Color name                GUI                  Base256    Base16
+;  Accents
+
+Color: grey      #767676 243 DarkGray
+Color: blue      #5f87d7 68  Blue
+Color: green     #87af87 108 DarkGreen
+Color: orange    #d75f00 166 Red
+Color: purple    #af5fd7 140 DarkMagenta
+Color: red       #af0000 160 DarkRed
+Color: yellow    #af8700 136 DarkYellow
+
+Color: xdblack   #262626 ~
+Color: xdblue    #5f87af ~
+Color: xdcyan    #5f8787 ~
+Color: xdgreen   #878700 ~
+Color: xdmagenta #875fd7 ~
+Color: xdred     #870000 ~
+Color: xdyellow  #d78700 ~
+Color: xdwhite   #a8a8a8 ~
+
+Color: xlblack   #6c6c6c ~
+Color: xlblue    #5fafd7 ~
+Color: xlcyan    #5fafaf ~
+Color: xlgreen   #afaf00 ~
+Color: xlmagenta #af87d7 ~
+Color: xlred     #d70000 ~
+Color: xlyellow  #ffaf00 ~
+Color: xlwhite   #eeeeee ~
+
+; Backgrounds
+Color: bkgrd_0 #1c1c1c 235 Black
+Color: bkgrd_1 #303030 236 DarkGray
+Color: bkgrd_2 #444444 237 DarkGray
+Color: bkgrd_3 #585858 238 DarkGray
+Color: bkgrd_4 #6c6c6c 241 DarkGray
+
+;  Foregrounds
+Color: frgrd_0 #eeeeee 255 White
+Color: frgrd_1 #dadada 249 LightGrey
+Color: frgrd_2 #c6c6c6 248 LightGrey
+Color: frgrd_3 #b2b2b2 247 LightGrey
+Color: frgrd_4 #9e9e9e 245 LightGrey
+
+Term Colors: bkgrd_0 red green yellow blue purple orange frgrd_0
+Term Colors: bkgrd_4 xlred xlgreen xlyellow xlblue xlmagenta xlcyan frgrd_4
+
+Include: _definitions.colortemplate

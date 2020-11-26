@@ -1,0 +1,163 @@
+
+;Default highlight groups {{{
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 8 2
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 8 2
+    Normal       frgrd_0  none
+    CursorLineNr purple none
+    FoldColumn   grey   none
+    LineNr       grey   none
+    Terminal     frgrd_0  none
+#else
+    Normal       frgrd_0  bkgrd_0
+    CursorLineNr purple bkgrd_1
+    FoldColumn   grey   bkgrd_1
+    LineNr       grey   bkgrd_1
+    Terminal     frgrd_0  bkgrd_0
+#endif
+;Group              Foreground        Background        Attributes
+ColorColumn       none       bkgrd_1
+CursorColumn      ->         ColorColumn
+CursorLine        ->         ColorColumn
+Cursor            frgrd_0      purple
+Conceal           purple     none
+
+Folded            grey       bkgrd_1      italic
+
+DiffAdd           green      none         reverse
+DiffChange        yellow     none         reverse
+DiffDelete        red        none         reverse
+DiffText          orange     none         bold,reverse
+diffAdded         ->         DiffAdd
+diffRemoved       ->         DiffDelete
+
+EndOfBuffer       bkgrd_1    none
+
+Error             red        frgrd_0        reverse
+ErrorMsg          ->         Error
+Warning           yellow     none         reverse
+WarningMsg        ->         Warning
+
+LspDiagnosticsDefaultError        ->     Error
+LspDiagnosticsDefaultTextError    ->     Error
+LspDiagnosticsDefaultWarning      ->     Warning
+LspDiagnosticsDefaultInformation  ->     Warning
+LspDiagnosticsDefaultHint         ->     Warning
+
+LspDiagnosticsFloatingError       red    frgrd_0
+LspDiagnosticsFloatingWarning     yellow none
+LspDiagnosticsFloatingInformation yellow none
+LspDiagnosticsFloatingHint        yellow none
+
+IncSearch         orange     none         t=reverse g=standout
+MatchParen        none yellow         bold
+Search            purple     none         reverse
+
+Directory         purple     none
+
+ModeMsg           frgrd_0      none
+MoreMsg           frgrd_1    none
+Question          ->         MoreMsg
+NonText           frgrd_0      none
+Ignore            ->         NonText
+
+Pmenu             frgrd_1    bkgrd_2
+PmenuSbar         frgrd_1    bkgrd_1
+PmenuSel          frgrd_0    purple
+PmenuThumb        none       orange
+WildMenu          orange     none
+
+SignColumn        grey       none
+SpecialKey        ->         SignColumn
+SpellBad          red        none         s=red     t=underline g=undercurl
+SpellCap          green      none         s=red     t=underline g=undercurl
+SpellLocal        blue       none         s=red     t=underline g=undercurl
+SpellRare         yellow     none         s=red     t=underline g=undercurl
+
+StatusLine        ->         Normal
+StatusLineNC      ->         Comment
+TabLine           ->         StatusLineNC
+TabLineFill       ->         StatusLineNC
+TabLineSel        ->         StatusLine
+
+Title             none       none         bold
+
+VertSplit         bkgrd_1    bkgrd_1
+Visual            none bkgrd_3
+VisualNOS         none bkgrd_3
+
+;Other      conventional group     names       (see `:help group-name`)
+Constant          purple     none
+Boolean           ->         Constant
+Character         ->         Constant
+Number            ->         Constant
+Float             ->         Number
+String            ->         Constant
+
+Special           none       none bold
+SpecialChar       ->         Special
+SpecialComment    ->         Special
+Delimiter         ->         Special
+Debug             ->         Special
+
+Comment           grey       none         italic
+Whitespace -> Comment
+
+Identifier        ->         Constant
+Function          ->         Identifier
+
+PreProc           grey       none
+Include           ->         PreProc
+
+Statement         grey       none
+Label             ->         Statement
+Keyword           ->         Statement
+
+Operator          -> Statement
+
+Type              purple     none
+StorageClass      ->         Type
+Structure         ->         Type
+
+Todo              orange     none         bold
+Underlined        none       none         underline
+CursorIM          none       none         reverse
+
+helpHyperTextJump purple     none         underline
+htmlTag           ->         Constant
+htmlTagName       ->         htmlTag
+htmlEndTag        ->         htmlTag
+htmlSpecialTagName        ->         htmlTag
+gitcommitSummary  ->         Title
+;}}}
+
+;Additional highlight    groups    {{{
+NormalMode        purple     none         reverse
+InsertMode        green      none         reverse
+ReplaceMode       orange     none         reverse
+VisualMode        blue       none         reverse
+CommandMode       red    none         reverse
+;}}}
+
+;NeoVim     {{{
+TermCursor        ->         Cursor
+TermCursorNC      ->         CursorColumn
+;}}}
+
+;Floaterm {{{
+Floaterm -> ColorColumn
+FloatermBorder -> Folded
+;}}}
+
+;Markdown {{{
+markdownBold none none bold
+markdownItalic none none italic
+markdownError -> Error
+;}}}
+
+;LaTeX {{{
+texItalStyle none none italic
+;}}}
+; vim: fdm=marker
