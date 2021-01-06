@@ -81,7 +81,7 @@ SpellCap          green      none         s=red     t=underline g=undercurl
 SpellLocal        blue       none         s=red     t=underline g=undercurl
 SpellRare         yellow     none         s=red     t=underline g=undercurl
 
-StatusLine        ->         Normal
+StatusLine        frgrd_0   none
 StatusLineNC      ->         Comment
 TabLine           ->         StatusLineNC
 TabLineFill       ->         StatusLineNC
@@ -149,6 +149,8 @@ CommandMode       red    none         reverse
 ;NeoVim     {{{
 TermCursor        ->         Cursor
 TermCursorNC      ->         CursorColumn
+NormalFloat       ->         Pmenu
+NormalNC          frgrd_3 none
 ;}}}
 
 ;Floaterm {{{
