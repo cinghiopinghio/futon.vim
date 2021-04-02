@@ -9,23 +9,23 @@ Color: purple    #af5fd7 140 DarkMagenta
 Color: red       #af0000 160 DarkRed
 Color: yellow    #af8700 136 DarkYellow
 
-Color: xdblack   #262626 ~
-Color: xdblue    #5f87af ~
-Color: xdcyan    #5f8787 ~
-Color: xdgreen   #878700 ~
-Color: xdmagenta #875fd7 ~
-Color: xdred     #870000 ~
-Color: xdyellow  #d78700 ~
-Color: xdwhite   #a8a8a8 ~
+Color: xdblack   #262626 ~ Black
+Color: xdblue    #5f87af ~ Blue
+Color: xdcyan    #5f8787 ~ Blue
+Color: xdgreen   #878700 ~ Green
+Color: xdmagenta #875fd7 ~ DarkMagenta
+Color: xdred     #870000 ~ DarkRed
+Color: xdyellow  #d78700 ~ DarkYellow
+Color: xdwhite   #a8a8a8 ~ LightGray
 
-Color: xlblack   #6c6c6c ~
-Color: xlblue    #5fafd7 ~
-Color: xlcyan    #5fafaf ~
-Color: xlgreen   #afaf00 ~
-Color: xlmagenta #af87d7 ~
-Color: xlred     #d70000 ~
-Color: xlyellow  #ffaf00 ~
-Color: xlwhite   #eeeeee ~
+Color: xlblack   #6c6c6c ~ DarkGray
+Color: xlblue    #5fafd7 ~ Blue
+Color: xlcyan    #5fafaf ~ Blue
+Color: xlgreen   #afaf00 ~ Green
+Color: xlmagenta #af87d7 ~ DarkMagenta
+Color: xlred     #d70000 ~ Red
+Color: xlyellow  #ffaf00 ~ DarkYellow
+Color: xlwhite   #eeeeee ~ White
 
 ; Backgrounds
 Color: bkgrd_0 #1c1c1c 235 Black

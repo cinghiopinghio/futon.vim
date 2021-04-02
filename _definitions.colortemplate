@@ -8,26 +8,30 @@ Variant: gui 256 8 2
     Normal       frgrd_0  none
     CursorLineNr purple none
     FoldColumn   grey   none
-    LineNr       grey   none
     Terminal     frgrd_0  none
 #else
     Normal       frgrd_0  bkgrd_0
     CursorLineNr purple bkgrd_1
     FoldColumn   grey   bkgrd_1
-    LineNr       grey   bkgrd_1
     Terminal     frgrd_0  bkgrd_0
 #endif
 ;Group              Foreground        Background        Attributes
-ColorColumn       none       bkgrd_1
-CursorColumn      ->         ColorColumn
-CursorLine        ->         ColorColumn
-Cursor            frgrd_0      purple
-Conceal           purple     none
+LineNr       grey    bkgrd_1
+ColorColumn  none    bkgrd_1
+CursorColumn ->      ColorColumn
+CursorLine   ->      ColorColumn
+Cursor       frgrd_0 purple
+Conceal      purple  none
 
-User1 purple none
-User2 none purple
-User3 frgrd_0 none
-User4 none frgrd_0
+User1 red none
+User2 green none
+User3 yellow none
+User4 blue none
+User5 purple none
+User6 orange xdred
+User7 frgrd_0 bkgrd_0
+User8 grey bkgrd_3
+User9 purple none
 
 Folded            grey       bkgrd_1      italic
 
@@ -48,13 +52,18 @@ WarningMsg        ->         Warning
 LspDiagnosticsDefaultError        ->     Error
 LspDiagnosticsDefaultTextError    ->     Error
 LspDiagnosticsDefaultWarning      ->     Warning
-LspDiagnosticsDefaultInformation  ->     Warning
-LspDiagnosticsDefaultHint         ->     Warning
+LspDiagnosticsDefaultInformation frgrd_1  bkgrd_1
+LspDiagnosticsDefaultHint         frgrd_3 bkgrd_1
 
-LspDiagnosticsFloatingError       red    frgrd_0
+LspDiagnosticsFloatingError       red    none
 LspDiagnosticsFloatingWarning     yellow none
-LspDiagnosticsFloatingInformation yellow none
-LspDiagnosticsFloatingHint        yellow none
+LspDiagnosticsFloatingInformation frgrd_1 none
+LspDiagnosticsFloatingHint        frgrd_3 none
+
+LspDiagnosticsVirtualTextError       red    none
+LspDiagnosticsVirtualTextWarning     yellow none
+LspDiagnosticsVirtualTextInformation frgrd_1 none
+LspDiagnosticsVirtualTextHint        frgrd_3 none
 
 IncSearch         orange     none         t=reverse g=standout
 MatchParen        none yellow         bold
@@ -65,7 +74,7 @@ Directory         purple     none
 ModeMsg           frgrd_0      none
 MoreMsg           frgrd_1    none
 Question          ->         MoreMsg
-NonText           frgrd_0      none
+NonText           grey      none
 Ignore            ->         NonText
 
 Pmenu             frgrd_1    bkgrd_2
@@ -74,12 +83,12 @@ PmenuSel          frgrd_0    purple
 PmenuThumb        none       orange
 WildMenu          orange     none
 
-SignColumn        grey       none
+SignColumn        grey       bkgrd_1
 SpecialKey        ->         SignColumn
-SpellBad          red        none         s=red     t=underline g=undercurl
-SpellCap          green      none         s=red     t=underline g=undercurl
-SpellLocal        blue       none         s=red     t=underline g=undercurl
-SpellRare         yellow     none         s=red     t=underline g=undercurl
+SpellBad          red        bkgrd_1         s=red     t=underline g=undercurl
+SpellCap          green      bkgrd_1         s=red     t=underline g=undercurl
+SpellLocal        blue       bkgrd_1         s=red     t=underline g=undercurl
+SpellRare         yellow     bkgrd_1         s=red     t=underline g=undercurl
 
 StatusLine        frgrd_0   none
 StatusLineNC      ->         Comment
@@ -89,7 +98,7 @@ TabLineSel        ->         StatusLine
 
 Title             none       none         bold
 
-VertSplit         bkgrd_1    bkgrd_1
+VertSplit         bkgrd_0    none
 Visual            none bkgrd_3
 VisualNOS         none bkgrd_3
 
