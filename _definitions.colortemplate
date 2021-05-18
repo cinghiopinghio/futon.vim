@@ -133,6 +133,7 @@ CommandMode       red    none         reverse
 TermCursor        ->         Cursor
 TermCursorNC      ->         CursorColumn
 NormalFloat       ->         Pmenu
+FloatBorder       ->         Normal
 NormalNC          frgrd_3 none
 ;}}}
 
