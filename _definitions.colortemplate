@@ -34,9 +34,9 @@ diffRemoved       ->         DiffDelete
 
 EndOfBuffer       bkgrd_1    none
 
-Error             red        frgrd_0        reverse
+Error             red        frgrd_0        reverse,undercurl
 ErrorMsg          ->         Error
-Warning           yellow     none         reverse
+Warning           yellow     none         reverse,underline
 WarningMsg        ->         Warning
 
 LspDiagnosticsDefaultError        ->     Error
