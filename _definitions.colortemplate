@@ -114,11 +114,6 @@ Underlined        none       none         underline
 CursorIM          none       none         reverse
 
 helpHyperTextJump purple     none         underline
-htmlTag           ->         Constant
-htmlTagName       ->         htmlTag
-htmlEndTag        ->         htmlTag
-htmlSpecialTagName        ->         htmlTag
-gitcommitSummary  ->         Title
 ;}}}
 
 ;Additional highlight    groups    {{{
@@ -168,5 +163,13 @@ LspDiagnosticsVirtualTextError       red    none
 LspDiagnosticsVirtualTextWarning     yellow none
 LspDiagnosticsVirtualTextInformation frgrd_1 none
 LspDiagnosticsVirtualTextHint        frgrd_3 none
+;}}}
+
+;{{{ HTML
+htmlTag           ->         Constant
+htmlTagName       ->         htmlTag
+htmlEndTag        ->         htmlTag
+htmlSpecialTagName        ->         htmlTag
+gitcommitSummary  ->         Title
 ;}}}
 ; vim: fdm=marker
