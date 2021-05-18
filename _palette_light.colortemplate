@@ -13,7 +13,7 @@ Color: xdblack   #262626 ~ Black
 Color: xdblue    #5f87af ~ Blue
 Color: xdcyan    #5f8787 ~ Blue
 Color: xdgreen   #878700 ~ Green
-Color: xdmagenta #af5fd7 ~ DarkMagenta
+Color: xdpurple #af5fd7 ~ DarkMagenta
 Color: xdred     #af0000 ~ DarkRed
 Color: xdyellow  #d78700 ~ DarkYellow
 Color: xdwhite   #a8a8a8 ~ LightGray
@@ -22,7 +22,7 @@ Color: xlblack   #6c6c6c ~ DarkGray
 Color: xlblue    #5fafd7 ~ Blue
 Color: xlcyan    #5fafaf ~ Blue
 Color: xlgreen   #afaf00 ~ Green
-Color: xlmagenta #af87d7 ~ DarkMagenta
+Color: xlpurple #af87d7 ~ DarkMagenta
 Color: xlred     #d75f00 ~ Red
 Color: xlyellow  #ffaf00 ~ DarkYellow
 Color: xlwhite   #eeeeee ~ White
@@ -43,7 +43,7 @@ Color: bkgrd_2   #c6c6c6 248 LightGrey
 Color: bkgrd_3   #b2b2b2 247 LightGrey
 Color: bkgrd_4   #9e9e9e 245 LightGrey
 
-Term Colors: bkgrd_4 xlred xlgreen xlyellow xlblue xlmagenta xlcyan frgrd_4
+Term Colors: bkgrd_4 xlred xlgreen xlyellow xlblue xlpurple xlcyan frgrd_4
 Term Colors: bkgrd_0 red green yellow blue purple orange frgrd_0
 
 Include: _definitions.colortemplate
