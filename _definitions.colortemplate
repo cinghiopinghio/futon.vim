@@ -39,22 +39,6 @@ ErrorMsg          ->         Error
 Warning           yellow     none         reverse,underline
 WarningMsg        ->         Warning
 
-LspDiagnosticsDefaultError        ->     Error
-LspDiagnosticsDefaultTextError    ->     Error
-LspDiagnosticsDefaultWarning      ->     Warning
-LspDiagnosticsDefaultInformation frgrd_1  bkgrd_1
-LspDiagnosticsDefaultHint         frgrd_3 bkgrd_1
-
-LspDiagnosticsFloatingError       red    none
-LspDiagnosticsFloatingWarning     yellow none
-LspDiagnosticsFloatingInformation frgrd_1 none
-LspDiagnosticsFloatingHint        frgrd_3 none
-
-LspDiagnosticsVirtualTextError       red    none
-LspDiagnosticsVirtualTextWarning     yellow none
-LspDiagnosticsVirtualTextInformation frgrd_1 none
-LspDiagnosticsVirtualTextHint        frgrd_3 none
-
 IncSearch         orange     none         t=reverse g=standout
 MatchParen        none yellow         bold
 Search            purple     none         reverse
@@ -165,5 +149,23 @@ markdownError -> Error
 
 ;LaTeX {{{
 texItalStyle none none italic
+;}}}
+
+;{{{ Neovim LSP
+LspDiagnosticsDefaultError        ->     Error
+LspDiagnosticsDefaultTextError    ->     Error
+LspDiagnosticsDefaultWarning      ->     Warning
+LspDiagnosticsDefaultInformation frgrd_1  bkgrd_1
+LspDiagnosticsDefaultHint         frgrd_3 bkgrd_1
+
+LspDiagnosticsFloatingError       red    none
+LspDiagnosticsFloatingWarning     yellow none
+LspDiagnosticsFloatingInformation frgrd_1 none
+LspDiagnosticsFloatingHint        frgrd_3 none
+
+LspDiagnosticsVirtualTextError       red    none
+LspDiagnosticsVirtualTextWarning     yellow none
+LspDiagnosticsVirtualTextInformation frgrd_1 none
+LspDiagnosticsVirtualTextHint        frgrd_3 none
 ;}}}
 ; vim: fdm=marker
