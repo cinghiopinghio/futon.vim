@@ -165,6 +165,36 @@ LspDiagnosticsVirtualTextInformation frgrd_1 none
 LspDiagnosticsVirtualTextHint        frgrd_3 none
 ;}}}
 
+;{{{ TreeSitter
+
+TSConstant           -> Constant
+TSConstBuiltin       -> Constant
+TSConstMacro         -> Constant
+TSNumber             -> Number
+TSFloat              -> Float
+TSBoolean            -> Boolean
+TSCharacter          -> Character
+TSString             -> String
+TSStringRegex        -> String
+TSStringEscape       -> String
+TSVariable frgrd_0 none
+
+TSFunction yellow none bold
+TSClass -> TSFunction
+TSMethod frgrd_2 none
+TSField -> TSMethod
+
+TSOperator frgrd_3 none bold
+TSLabel -> TSOperator
+TSRepeat -> TSOperator
+TSConditional -> TSOperator
+TSKeyword -> TSOperator
+
+TSConstructor xlcyan none
+TSPunctDelimeter -> Delimiter
+TSPunctBracket -> Delimiter
+
+;}}}
 
 ;{{{ Python
 pythonStatement xlpurple none bold
