@@ -165,6 +165,20 @@ LspDiagnosticsVirtualTextInformation frgrd_1 none
 LspDiagnosticsVirtualTextHint        frgrd_3 none
 ;}}}
 
+
+;{{{ Python
+pythonStatement xlpurple none bold
+pythonRepeat        -> pythonStatement
+pythonConditional   -> pythonStatement
+pythonException     -> pythonStatement
+
+pythonClass yellow none bold
+pythonFunction -> pythonClass
+
+pythonOperator frgrd_0 none bold
+pythonTodo none red bold
+;}}}
+
 ;{{{ HTML
 htmlTag           ->         Constant
 htmlTagName       ->         htmlTag
