@@ -23,16 +23,6 @@ CursorLine   ->      ColorColumn
 Cursor       frgrd_0 purple
 Conceal      purple  none
 
-User1 red none
-User2 green none
-User3 yellow none
-User4 blue none
-User5 purple none
-User6 orange xdred
-User7 frgrd_0 bkgrd_0
-User8 grey bkgrd_3
-User9 purple none
-
 Folded            grey       bkgrd_1      italic
 
 DiffAdd           green      none         reverse
