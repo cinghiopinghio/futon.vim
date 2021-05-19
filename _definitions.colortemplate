@@ -6,12 +6,12 @@ Variant: 256 8 2
 #if get(g:, '@optionprefix_transp_bg', 0)
 Variant: gui 256 8 2
     Normal       frgrd_0  none
-    CursorLineNr purple none
+    CursorLineNr accent none
     FoldColumn   grey   none
     Terminal     frgrd_0  none
 #else
     Normal       frgrd_0  bkgrd_0
-    CursorLineNr purple bkgrd_1
+    CursorLineNr accent bkgrd_1
     FoldColumn   grey   bkgrd_1
     Terminal     frgrd_0  bkgrd_0
 #endif
@@ -20,8 +20,8 @@ LineNr       grey    bkgrd_1
 ColorColumn  none    bkgrd_1
 CursorColumn ->      ColorColumn
 CursorLine   ->      ColorColumn
-Cursor       frgrd_0 purple
-Conceal      purple  none
+Cursor       frgrd_0 accent
+Conceal      accent  none
 
 Folded            grey       bkgrd_1      italic
 
@@ -41,9 +41,9 @@ WarningMsg        ->         Warning
 
 IncSearch         orange     none         t=reverse g=standout
 MatchParen        none yellow         bold
-Search            purple     none         reverse
+Search            accent     none         reverse
 
-Directory         purple     none
+Directory         accent     none
 
 ModeMsg           frgrd_0      none
 MoreMsg           frgrd_1    none
@@ -53,7 +53,7 @@ Ignore            ->         NonText
 
 Pmenu             frgrd_1    bkgrd_2
 PmenuSbar         frgrd_1    bkgrd_1
-PmenuSel          frgrd_0    purple
+PmenuSel          frgrd_0    accent
 PmenuThumb        none       orange
 WildMenu          orange     none
 
@@ -77,7 +77,7 @@ Visual            none bkgrd_3
 VisualNOS         none bkgrd_3
 
 ;Other      conventional group     names       (see `:help group-name`)
-Constant          xlpurple     none
+Constant          xlaccent     none
 Boolean           ->         Constant
 Character         ->         Constant
 Number            ->         Constant
@@ -93,7 +93,7 @@ Debug             ->         Special
 Comment           grey       none         italic
 Whitespace -> Comment
 
-Identifier        purple none
+Identifier        accent none
 Function          ->         Identifier
 
 PreProc           grey       none
@@ -105,7 +105,7 @@ Keyword           ->         Statement
 
 Operator          -> Statement
 
-Type              purple     none
+Type              accent     none
 StorageClass      ->         Type
 Structure         ->         Type
 
@@ -113,11 +113,11 @@ Todo              orange     none         bold
 Underlined        none       none         underline
 CursorIM          none       none         reverse
 
-helpHyperTextJump purple     none         underline
+helpHyperTextJump accent     none         underline
 ;}}}
 
 ;Additional highlight    groups    {{{
-NormalMode        purple     none         reverse
+NormalMode        accent     none         reverse
 InsertMode        green      none         reverse
 ReplaceMode       orange     none         reverse
 VisualMode        blue       none         reverse
@@ -197,7 +197,7 @@ TSPunctBracket -> Delimiter
 ;}}}
 
 ;{{{ Python
-pythonStatement xlpurple none bold
+pythonStatement xlaccent none bold
 pythonRepeat        -> pythonStatement
 pythonConditional   -> pythonStatement
 pythonException     -> pythonStatement
