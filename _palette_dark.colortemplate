@@ -7,7 +7,7 @@ Color: xdaccent      #82598f ~ DarkMagenta
 Color: xlaccent      #b192bc ~ Magenta
 
 Color: red        #cc3033 ~ Red
-Color: green      #98971a ~ Green
+Color: green      #7c981f ~ Green
 Color: yellow     #d79921 ~ Yellow
 Color: blue       #5585a8 ~ Blue
 Color: magenta    #9b73a8 ~ Magenta
@@ -16,7 +16,7 @@ Color: orange     #d65d0e ~ Gray
 
 
 Color: xdred        #a32629 ~ DarkRed
-Color: xdgreen      #6c6c13 ~ DarkGreen
+Color: xdgreen      #596e16 ~ DarkGreen
 Color: xdyellow     #ab7a1a ~ DarkYellow
 Color: xdblue       #446a86 ~ DarkBlue
 Color: xdmagenta    #82598f ~ DarkMagenta
@@ -25,7 +25,7 @@ Color: xdorange     #a6480b ~ Gray
 
 
 Color: xlred        #d8575a ~ Red
-Color: xlgreen      #c4c221 ~ Green
+Color: xlgreen      #9fc228 ~ Green
 Color: xlyellow     #e3ae48 ~ Yellow
 Color: xlblue       #769dba ~ Blue
 Color: xlmagenta    #b192bc ~ Magenta

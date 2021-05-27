@@ -23,95 +23,95 @@ CursorLine   ->      ColorColumn
 Cursor       frgrd_0 accent
 Conceal      accent  none
 
-Folded            grey       bkgrd_1      italic
+Folded         grey         bkgrd_1 italic
 
-DiffAdd           green      none         reverse
-DiffChange        yellow     none         reverse
-DiffDelete        red        none         reverse
-DiffText          orange     none         bold,reverse
-diffAdded         ->         DiffAdd
-diffRemoved       ->         DiffDelete
+DiffAdd        green        none    reverse
+DiffChange     yellow       none    reverse
+DiffDelete     red          none    reverse
+DiffText       orange       none    bold,reverse
+diffAdded      ->           DiffAdd
+diffRemoved    ->           DiffDelete
 
-EndOfBuffer       bkgrd_1    none
+EndOfBuffer    bkgrd_1      none
 
-Error             red        frgrd_0        reverse,undercurl
-ErrorMsg          ->         Error
-Warning           yellow     none         reverse,underline
-WarningMsg        ->         Warning
+Error          red          frgrd_0 reverse,undercurl
+ErrorMsg       ->           Error
+Warning        yellow       none    reverse,underline
+WarningMsg     ->           Warning
 
-IncSearch         orange     none         t=reverse g=standout
-MatchParen        none yellow         bold
-Search            accent     none         reverse
+IncSearch      orange       none    t=reverse g=standout
+MatchParen     none         yellow  bold
+Search         accent       none    reverse
 
-Directory         accent     none
+Directory      accent       none
 
-ModeMsg           frgrd_0      none
-MoreMsg           frgrd_1    none
-Question          ->         MoreMsg
-NonText           grey      none
-Ignore            ->         NonText
+ModeMsg        frgrd_0      none
+MoreMsg        frgrd_1      none
+Question       ->           MoreMsg
+NonText        grey         none
+Ignore         ->           NonText
 
-Pmenu             frgrd_1    bkgrd_2
-PmenuSbar         frgrd_1    bkgrd_1
-PmenuSel          frgrd_0    accent
-PmenuThumb        none       orange
-WildMenu          orange     none
+Pmenu          frgrd_1      bkgrd_2
+PmenuSbar      frgrd_1      bkgrd_1
+PmenuSel       frgrd_0      accent
+PmenuThumb     none         orange
+WildMenu       orange       none
 
-SignColumn        grey       bkgrd_1
-SpecialKey        ->         SignColumn
-SpellBad          red        bkgrd_1         s=red     t=underline g=undercurl
-SpellCap          green      bkgrd_1         s=red     t=underline g=undercurl
-SpellLocal        blue       bkgrd_1         s=red     t=underline g=undercurl
-SpellRare         yellow     bkgrd_1         s=red     t=underline g=undercurl
+SignColumn     grey         bkgrd_1
+SpecialKey     ->           SignColumn
+SpellBad       red          bkgrd_1 s=red     t=underline g=undercurl
+SpellCap       green        bkgrd_1 s=red     t=underline g=undercurl
+SpellLocal     blue         bkgrd_1 s=red     t=underline g=undercurl
+SpellRare      yellow       bkgrd_1 s=red     t=underline g=undercurl
 
-StatusLine        frgrd_0   none
-StatusLineNC      ->         Comment
-TabLine           ->         StatusLineNC
-TabLineFill       ->         StatusLineNC
-TabLineSel        ->         StatusLine
+StatusLine     frgrd_0      none
+StatusLineNC   ->           Comment
+TabLine        ->           StatusLineNC
+TabLineFill    ->           StatusLineNC
+TabLineSel     ->           StatusLine
 
-Title             none       none         bold
+Title          none         none    bold
 
-VertSplit         bkgrd_0    none
-Visual            none bkgrd_3
-VisualNOS         none bkgrd_3
+VertSplit      bkgrd_0      none
+Visual         none         bkgrd_3
+VisualNOS      none         bkgrd_3
 
-;Other      conventional group     names       (see `:help group-name`)
-Constant          xlaccent     none
-Boolean           ->         Constant
-Character         ->         Constant
-Number            ->         Constant
-Float             ->         Number
-String            ->         Constant
+;Other         conventional group   names     (see        `:help group-name`)
+Constant       xlaccent     none
+Boolean        ->           Constant
+Character      ->           Constant
+Number         ->           Constant
+Float          ->           Number
+String         ->           Constant
 
-Special           none       none bold
-SpecialChar       ->         Special
-SpecialComment    ->         Special
-Delimiter         ->         Special
-Debug             ->         Special
+Special        none         none    bold
+SpecialChar    ->           Special
+SpecialComment ->           Special
+Delimiter      ->           Special
+Debug          ->           Special
 
-Comment           grey       none         italic
-Whitespace -> Comment
+Comment        grey         none    italic
+Whitespace     ->           Comment
 
-Identifier        accent none
-Function          ->         Identifier
+Identifier     accent       none
+Function       ->           Identifier
 
-PreProc           grey       none
-Include           ->         PreProc
+PreProc        grey         none
+Include        ->           PreProc
 
-Statement         grey       none
-Label             ->         Statement
-Keyword           ->         Statement
+Statement      grey         none
+Label          ->           Statement
+Keyword        ->           Statement
 
-Operator          -> Statement
+Operator       ->           Statement
 
-Type              accent     none
-StorageClass      ->         Type
-Structure         ->         Type
+Type           accent       none
+StorageClass   ->           Type
+Structure      ->           Type
 
-Todo              orange     none         bold
-Underlined        none       none         underline
-CursorIM          none       none         reverse
+Todo           orange       none    bold
+Underlined     none         none    underline
+CursorIM       none         none    reverse
 
 helpHyperTextJump accent     none         underline
 ;}}}
@@ -181,7 +181,7 @@ TSVariable frgrd_0 none
 
 TSFunction yellow none bold
 TSClass -> TSFunction
-TSMethod frgrd_2 none
+TSMethod frgrd_1 none bold
 TSField -> TSMethod
 
 TSOperator frgrd_3 none bold
@@ -189,6 +189,7 @@ TSLabel -> TSOperator
 TSRepeat -> TSOperator
 TSConditional -> TSOperator
 TSKeyword -> TSOperator
+TSVariableBuiltin -> TSOperator
 
 TSConstructor xlcyan none
 TSPunctDelimeter -> Delimiter
