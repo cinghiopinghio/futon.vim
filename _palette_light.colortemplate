@@ -49,7 +49,7 @@ Color: frgrd_3 #525252 ~ DarkGray
 Color: frgrd_4 #646464 ~ DarkGray
 
 
-Term Colors: bkgrd_4 xdred xdgreen xdyellow xdblue xdmagenta xdcyan frgrd_4
-Term Colors: bkgrd_0 red green yellow blue magenta orange frgrd_0
+Term Colors: bkgrd_0 red green yellow blue magenta orange frgrd_2
+Term Colors: bkgrd_2 xdred xdgreen xdyellow xdblue xdmagenta xdcyan frgrd_0
 
 Include: _definitions.colortemplate

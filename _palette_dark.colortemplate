@@ -49,7 +49,7 @@ Color: frgrd_3 #a6a6a6 ~ Gray
 Color: frgrd_4 #8e8e8e ~ Gray
 
 
-Term Colors: bkgrd_0 red green yellow blue magenta cyan frgrd_0
-Term Colors: bkgrd_4 xlred xlgreen xlyellow xlblue xlmagenta xlcyan frgrd_4
+Term Colors: bkgrd_0 red green yellow blue magenta cyan frgrd_2
+Term Colors: bkgrd_2 xlred xlgreen xlyellow xlblue xlmagenta xlcyan frgrd_0
 
 Include: _definitions.colortemplate
