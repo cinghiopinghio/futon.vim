@@ -78,7 +78,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Warning guifg=#d79921 guibg=NONE gui=reverse,underline cterm=reverse,underline
     hi! link WarningMsg Warning
     hi IncSearch guifg=#d65d0e guibg=NONE gui=standout cterm=reverse
-    hi MatchParen guifg=NONE guibg=#d79921 gui=bold cterm=bold
+    hi MatchParen guifg=#eeeeee guibg=#767676 gui=underline cterm=underline
     hi Search guifg=#9b73a8 guibg=NONE gui=reverse cterm=reverse
     hi Directory guifg=#9b73a8 guibg=NONE gui=NONE cterm=NONE
     hi ModeMsg guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
@@ -177,11 +177,12 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi TSMethod guifg=#d6d6d6 guibg=NONE gui=bold cterm=bold
     hi! link TSField TSMethod
     hi TSOperator guifg=#a6a6a6 guibg=NONE gui=bold cterm=bold
-    hi! link TSLabel TSOperator
-    hi! link TSRepeat TSOperator
-    hi! link TSConditional TSOperator
-    hi! link TSKeyword TSOperator
-    hi! link TSVariableBuiltin TSOperator
+    hi TSLabel guifg=#a6a6a6 guibg=NONE gui=bold,italic cterm=bold,italic
+    hi! link TSRepeat TSLabel
+    hi! link TSConditional TSLabel
+    hi! link TSKeyword TSLabel
+    hi! link TSKeywordOperator TSLabel
+    hi! link TSVariableBuiltin TSLabel
     hi TSConstructor guifg=#7ab8b8 guibg=NONE gui=NONE cterm=NONE
     hi! link TSPunctDelimeter Delimiter
     hi! link TSPunctBracket Delimiter
@@ -203,6 +204,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       hi Comment gui=NONE cterm=NONE
       hi markdownItalic gui=NONE cterm=NONE
       hi texItalStyle gui=NONE cterm=NONE
+      hi TSLabel gui=bold cterm=bold
     endif
     if has('nvim')
       hi! link TermCursor Cursor
@@ -261,7 +263,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi Warning guifg=#d79921 guibg=NONE gui=reverse,underline cterm=reverse,underline
   hi! link WarningMsg Warning
   hi IncSearch guifg=#d65d0e guibg=NONE gui=standout cterm=reverse
-  hi MatchParen guifg=NONE guibg=#d79921 gui=bold cterm=bold
+  hi MatchParen guifg=#1c1c1c guibg=#767676 gui=underline cterm=underline
   hi Search guifg=#9b73a8 guibg=NONE gui=reverse cterm=reverse
   hi Directory guifg=#9b73a8 guibg=NONE gui=NONE cterm=NONE
   hi ModeMsg guifg=#1c1c1c guibg=NONE gui=NONE cterm=NONE
@@ -360,11 +362,12 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi TSMethod guifg=#2e2e2e guibg=NONE gui=bold cterm=bold
   hi! link TSField TSMethod
   hi TSOperator guifg=#525252 guibg=NONE gui=bold cterm=bold
-  hi! link TSLabel TSOperator
-  hi! link TSRepeat TSOperator
-  hi! link TSConditional TSOperator
-  hi! link TSKeyword TSOperator
-  hi! link TSVariableBuiltin TSOperator
+  hi TSLabel guifg=#525252 guibg=NONE gui=bold,italic cterm=bold,italic
+  hi! link TSRepeat TSLabel
+  hi! link TSConditional TSLabel
+  hi! link TSKeyword TSLabel
+  hi! link TSKeywordOperator TSLabel
+  hi! link TSVariableBuiltin TSLabel
   hi TSConstructor guifg=#478585 guibg=NONE gui=NONE cterm=NONE
   hi! link TSPunctDelimeter Delimiter
   hi! link TSPunctBracket Delimiter
@@ -386,6 +389,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Comment gui=NONE cterm=NONE
     hi markdownItalic gui=NONE cterm=NONE
     hi texItalStyle gui=NONE cterm=NONE
+    hi TSLabel gui=bold cterm=bold
   endif
   if has('nvim')
     hi! link TermCursor Cursor
@@ -430,7 +434,7 @@ if s:t_Co >= 256
     hi Warning ctermfg=172 ctermbg=NONE cterm=reverse,underline
     hi! link WarningMsg Warning
     hi IncSearch ctermfg=166 ctermbg=NONE cterm=reverse
-    hi MatchParen ctermfg=NONE ctermbg=172 cterm=bold
+    hi MatchParen ctermfg=255 ctermbg=243 cterm=underline
     hi Search ctermfg=133 ctermbg=NONE cterm=reverse
     hi Directory ctermfg=133 ctermbg=NONE cterm=NONE
     hi ModeMsg ctermfg=255 ctermbg=NONE cterm=NONE
@@ -529,11 +533,12 @@ if s:t_Co >= 256
     hi TSMethod ctermfg=188 ctermbg=NONE cterm=bold
     hi! link TSField TSMethod
     hi TSOperator ctermfg=248 ctermbg=NONE cterm=bold
-    hi! link TSLabel TSOperator
-    hi! link TSRepeat TSOperator
-    hi! link TSConditional TSOperator
-    hi! link TSKeyword TSOperator
-    hi! link TSVariableBuiltin TSOperator
+    hi TSLabel ctermfg=248 ctermbg=NONE cterm=bold,italic
+    hi! link TSRepeat TSLabel
+    hi! link TSConditional TSLabel
+    hi! link TSKeyword TSLabel
+    hi! link TSKeywordOperator TSLabel
+    hi! link TSVariableBuiltin TSLabel
     hi TSConstructor ctermfg=73 ctermbg=NONE cterm=NONE
     hi! link TSPunctDelimeter Delimiter
     hi! link TSPunctBracket Delimiter
@@ -555,6 +560,7 @@ if s:t_Co >= 256
       hi Comment cterm=NONE
       hi markdownItalic cterm=NONE
       hi texItalStyle cterm=NONE
+      hi TSLabel cterm=bold
     endif
     if has('nvim')
       hi! link TermCursor Cursor
@@ -594,7 +600,7 @@ if s:t_Co >= 256
   hi Warning ctermfg=172 ctermbg=NONE cterm=reverse,underline
   hi! link WarningMsg Warning
   hi IncSearch ctermfg=166 ctermbg=NONE cterm=reverse
-  hi MatchParen ctermfg=NONE ctermbg=172 cterm=bold
+  hi MatchParen ctermfg=234 ctermbg=243 cterm=underline
   hi Search ctermfg=133 ctermbg=NONE cterm=reverse
   hi Directory ctermfg=133 ctermbg=NONE cterm=NONE
   hi ModeMsg ctermfg=234 ctermbg=NONE cterm=NONE
@@ -693,11 +699,12 @@ if s:t_Co >= 256
   hi TSMethod ctermfg=236 ctermbg=NONE cterm=bold
   hi! link TSField TSMethod
   hi TSOperator ctermfg=239 ctermbg=NONE cterm=bold
-  hi! link TSLabel TSOperator
-  hi! link TSRepeat TSOperator
-  hi! link TSConditional TSOperator
-  hi! link TSKeyword TSOperator
-  hi! link TSVariableBuiltin TSOperator
+  hi TSLabel ctermfg=239 ctermbg=NONE cterm=bold,italic
+  hi! link TSRepeat TSLabel
+  hi! link TSConditional TSLabel
+  hi! link TSKeyword TSLabel
+  hi! link TSKeywordOperator TSLabel
+  hi! link TSVariableBuiltin TSLabel
   hi TSConstructor ctermfg=66 ctermbg=NONE cterm=NONE
   hi! link TSPunctDelimeter Delimiter
   hi! link TSPunctBracket Delimiter
@@ -719,6 +726,7 @@ if s:t_Co >= 256
     hi Comment cterm=NONE
     hi markdownItalic cterm=NONE
     hi texItalStyle cterm=NONE
+    hi TSLabel cterm=bold
   endif
   if has('nvim')
     hi! link TermCursor Cursor
@@ -760,7 +768,7 @@ if s:t_Co >= 8
     hi Warning ctermfg=Yellow ctermbg=NONE cterm=reverse,underline
     hi! link WarningMsg Warning
     hi IncSearch ctermfg=Gray ctermbg=NONE cterm=reverse
-    hi MatchParen ctermfg=NONE ctermbg=Yellow cterm=bold
+    hi MatchParen ctermfg=White ctermbg=DarkGray cterm=underline
     hi Search ctermfg=Magenta ctermbg=NONE cterm=reverse
     hi Directory ctermfg=Magenta ctermbg=NONE cterm=NONE
     hi ModeMsg ctermfg=White ctermbg=NONE cterm=NONE
@@ -859,11 +867,12 @@ if s:t_Co >= 8
     hi TSMethod ctermfg=Gray ctermbg=NONE cterm=bold
     hi! link TSField TSMethod
     hi TSOperator ctermfg=Gray ctermbg=NONE cterm=bold
-    hi! link TSLabel TSOperator
-    hi! link TSRepeat TSOperator
-    hi! link TSConditional TSOperator
-    hi! link TSKeyword TSOperator
-    hi! link TSVariableBuiltin TSOperator
+    hi TSLabel ctermfg=Gray ctermbg=NONE cterm=bold,italic
+    hi! link TSRepeat TSLabel
+    hi! link TSConditional TSLabel
+    hi! link TSKeyword TSLabel
+    hi! link TSKeywordOperator TSLabel
+    hi! link TSVariableBuiltin TSLabel
     hi TSConstructor ctermfg=Cyan ctermbg=NONE cterm=NONE
     hi! link TSPunctDelimeter Delimiter
     hi! link TSPunctBracket Delimiter
@@ -885,6 +894,7 @@ if s:t_Co >= 8
       hi Comment cterm=NONE
       hi markdownItalic cterm=NONE
       hi texItalStyle cterm=NONE
+      hi TSLabel cterm=bold
     endif
     if has('nvim')
       hi! link TermCursor Cursor
@@ -924,7 +934,7 @@ if s:t_Co >= 8
   hi Warning ctermfg=Yellow ctermbg=NONE cterm=reverse,underline
   hi! link WarningMsg Warning
   hi IncSearch ctermfg=Gray ctermbg=NONE cterm=reverse
-  hi MatchParen ctermfg=NONE ctermbg=Yellow cterm=bold
+  hi MatchParen ctermfg=Black ctermbg=DarkGray cterm=underline
   hi Search ctermfg=Magenta ctermbg=NONE cterm=reverse
   hi Directory ctermfg=Magenta ctermbg=NONE cterm=NONE
   hi ModeMsg ctermfg=Black ctermbg=NONE cterm=NONE
@@ -1023,11 +1033,12 @@ if s:t_Co >= 8
   hi TSMethod ctermfg=DarkGray ctermbg=NONE cterm=bold
   hi! link TSField TSMethod
   hi TSOperator ctermfg=DarkGray ctermbg=NONE cterm=bold
-  hi! link TSLabel TSOperator
-  hi! link TSRepeat TSOperator
-  hi! link TSConditional TSOperator
-  hi! link TSKeyword TSOperator
-  hi! link TSVariableBuiltin TSOperator
+  hi TSLabel ctermfg=DarkGray ctermbg=NONE cterm=bold,italic
+  hi! link TSRepeat TSLabel
+  hi! link TSConditional TSLabel
+  hi! link TSKeyword TSLabel
+  hi! link TSKeywordOperator TSLabel
+  hi! link TSVariableBuiltin TSLabel
   hi TSConstructor ctermfg=Cyan ctermbg=NONE cterm=NONE
   hi! link TSPunctDelimeter Delimiter
   hi! link TSPunctBracket Delimiter
@@ -1049,6 +1060,7 @@ if s:t_Co >= 8
     hi Comment cterm=NONE
     hi markdownItalic cterm=NONE
     hi texItalStyle cterm=NONE
+    hi TSLabel cterm=bold
   endif
   if has('nvim')
     hi! link TermCursor Cursor
@@ -1166,7 +1178,7 @@ if s:t_Co >= 2
     hi Warning term=reverse,underline
     hi! link WarningMsg Warning
     hi IncSearch term=reverse
-    hi MatchParen term=bold
+    hi MatchParen term=underline
     hi Search term=reverse
     hi Directory term=NONE
     hi ModeMsg term=NONE
@@ -1265,11 +1277,12 @@ if s:t_Co >= 2
     hi TSMethod term=bold
     hi! link TSField TSMethod
     hi TSOperator term=bold
-    hi! link TSLabel TSOperator
-    hi! link TSRepeat TSOperator
-    hi! link TSConditional TSOperator
-    hi! link TSKeyword TSOperator
-    hi! link TSVariableBuiltin TSOperator
+    hi TSLabel term=bold,italic
+    hi! link TSRepeat TSLabel
+    hi! link TSConditional TSLabel
+    hi! link TSKeyword TSLabel
+    hi! link TSKeywordOperator TSLabel
+    hi! link TSVariableBuiltin TSLabel
     hi TSConstructor term=NONE
     hi! link TSPunctDelimeter Delimiter
     hi! link TSPunctBracket Delimiter
@@ -1291,6 +1304,7 @@ if s:t_Co >= 2
       hi Comment term=NONE
       hi markdownItalic term=NONE
       hi texItalStyle term=NONE
+      hi TSLabel term=bold
     endif
     if has('nvim')
       hi! link TermCursor Cursor
@@ -1330,7 +1344,7 @@ if s:t_Co >= 2
   hi Warning term=reverse,underline
   hi! link WarningMsg Warning
   hi IncSearch term=reverse
-  hi MatchParen term=bold
+  hi MatchParen term=underline
   hi Search term=reverse
   hi Directory term=NONE
   hi ModeMsg term=NONE
@@ -1429,11 +1443,12 @@ if s:t_Co >= 2
   hi TSMethod term=bold
   hi! link TSField TSMethod
   hi TSOperator term=bold
-  hi! link TSLabel TSOperator
-  hi! link TSRepeat TSOperator
-  hi! link TSConditional TSOperator
-  hi! link TSKeyword TSOperator
-  hi! link TSVariableBuiltin TSOperator
+  hi TSLabel term=bold,italic
+  hi! link TSRepeat TSLabel
+  hi! link TSConditional TSLabel
+  hi! link TSKeyword TSLabel
+  hi! link TSKeywordOperator TSLabel
+  hi! link TSVariableBuiltin TSLabel
   hi TSConstructor term=NONE
   hi! link TSPunctDelimeter Delimiter
   hi! link TSPunctBracket Delimiter
@@ -1455,6 +1470,7 @@ if s:t_Co >= 2
     hi Comment term=NONE
     hi markdownItalic term=NONE
     hi texItalStyle term=NONE
+    hi TSLabel term=bold
   endif
   if has('nvim')
     hi! link TermCursor Cursor

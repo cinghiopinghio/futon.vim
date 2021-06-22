@@ -40,7 +40,7 @@ Warning        yellow       none    reverse,underline
 WarningMsg     ->           Warning
 
 IncSearch      orange       none    t=reverse g=standout
-MatchParen     none         yellow  bold
+MatchParen     frgrd_0      grey underline
 Search         accent       none    reverse
 
 Directory      accent       none
@@ -185,11 +185,12 @@ TSMethod frgrd_1 none bold
 TSField -> TSMethod
 
 TSOperator frgrd_3 none bold
-TSLabel -> TSOperator
-TSRepeat -> TSOperator
-TSConditional -> TSOperator
-TSKeyword -> TSOperator
-TSVariableBuiltin -> TSOperator
+TSLabel frgrd_3 none bold,italic
+TSRepeat -> TSLabel
+TSConditional -> TSLabel
+TSKeyword -> TSLabel
+TSKeywordOperator -> TSLabel
+TSVariableBuiltin -> TSLabel
 
 TSConstructor xlcyan none
 TSPunctDelimeter -> Delimiter
