@@ -34,9 +34,9 @@ diffRemoved    ->           DiffDelete
 
 EndOfBuffer    bkgrd_1      none
 
-Error          red          frgrd_0 reverse,undercurl
+Error          red          bkgrd_0 reverse
 ErrorMsg       ->           Error
-Warning        yellow       none    reverse,underline
+Warning        yellow       bkgrd_0 reverse
 WarningMsg     ->           Warning
 
 IncSearch      orange       none    t=reverse g=standout
@@ -167,34 +167,41 @@ LspDiagnosticsVirtualTextHint        frgrd_3 none
 
 ;{{{ TreeSitter
 
-TSConstant           -> Constant
-TSConstBuiltin       -> Constant
-TSConstMacro         -> Constant
-TSNumber             -> Number
-TSFloat              -> Float
-TSBoolean            -> Boolean
-TSCharacter          -> Character
-TSString             -> String
-TSStringRegex        -> String
-TSStringEscape       -> String
-TSVariable frgrd_0 none
+TSConstant        ->      Constant
+TSConstMacro      ->      Constant
+TSNumber          ->      Number
+TSFloat           ->      Float
+TSBoolean         ->      Boolean
+TSCharacter       ->      Character
+TSString          ->      String
+TSStringRegex     ->      String
+TSStringEscape    ->      String
 
-TSFunction yellow none bold
-TSClass -> TSFunction
-TSMethod frgrd_1 none bold
-TSField -> TSMethod
+TSVariable        frgrd_0 none bold
 
-TSOperator frgrd_3 none bold
-TSLabel frgrd_3 none bold,italic
-TSRepeat -> TSLabel
-TSConditional -> TSLabel
-TSKeyword -> TSLabel
-TSKeywordOperator -> TSLabel
-TSVariableBuiltin -> TSLabel
+TSFunction        yellow  none bold
+TSClass           ->      TSFunction
 
-TSConstructor xlcyan none
-TSPunctDelimeter -> Delimiter
-TSPunctBracket -> Delimiter
+TSMethod          frgrd_2 none
+TSField           ->      TSMethod
+
+TSOperator        frgrd_3 none
+TSVariableBuiltin ->      TSOperator
+TSConstBuiltin    ->      TSOperator
+
+TSLabel           grey    none italic
+TSConditional     ->      TSLabel
+TSInclude         ->      TSLabel
+TSKeyword         ->      TSLabel
+TSKeywordFunction ->      TSLabel
+TSKeywordOperator ->      TSLabel
+TSRepeat          ->      TSLabel
+
+TSConstructor     xlcyan  none
+TSPunctDelimeter  ->      Delimiter
+TSPunctBracket    ->      Delimiter
+
+TSWarning         ->      Warning
 
 ;}}}
 
