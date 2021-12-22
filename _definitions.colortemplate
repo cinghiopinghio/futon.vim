@@ -84,7 +84,7 @@ Number         ->           Constant
 Float          ->           Number
 String         ->           Constant
 
-Special        none         none    bold
+Special        frgrd_4         none    bold
 SpecialChar    ->           Special
 SpecialComment ->           Special
 Delimiter      ->           Special
