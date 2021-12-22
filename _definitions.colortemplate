@@ -65,10 +65,10 @@ SpellLocal     blue         bkgrd_1 s=red     t=underline g=undercurl
 SpellRare      yellow       bkgrd_1 s=red     t=underline g=undercurl
 
 StatusLine     frgrd_0      none
-StatusLineNC   ->           Comment
-TabLine        ->           StatusLineNC
-TabLineFill    ->           StatusLineNC
-TabLineSel     ->           StatusLine
+StatusLineNC   grey         none
+TabLine        grey         none
+TabLineFill    grey         none
+TabLineSel     none         accent  bold
 
 Title          none         none    bold
 
