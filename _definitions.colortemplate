@@ -147,6 +147,14 @@ Floaterm -> ColorColumn
 FloatermBorder -> Folded
 ;}}}
 
+;{{{ indent_blankline
+IndentBlanklineChar -> Comment
+IndentBlanklineSpaceChar -> Whitespace
+IndentBlanklineSpaceCharBlankline -> Whitespace
+IndentBlanklineContextChar -> Conceal
+IndentBlanklineContextStart none none underline guisp=accent
+;}}}
+
 ;Markdown {{{
 markdownBold none none bold
 markdownItalic none none italic
