@@ -229,6 +229,21 @@ TSStringEscape -> TSPunctSpecial
 
 ;}}}
 
+; nvim-cmp {{{
+
+CmpItemAbbr           ->      Normal
+CmpItemAbbrDeprecated ->      CmpItemAbbr
+CmpItemAbbrMatch      accent  none
+CmpItemAbbrMatchFuzzy ->      CmpItemAbbrMatch
+CmpItemKind           ->      Comment
+CmpItemKindSnippet    cyan    none
+CmpItemKindClass      green   none bold
+CmpItemKindFunction   ->      CmpItemKindClass
+CmpItemKindVariable   magenta none
+CmpItemMenu red none
+
+;}}}
+
 ;{{{ Python
 pythonStatement xlaccent none bold
 pythonRepeat        -> pythonStatement
