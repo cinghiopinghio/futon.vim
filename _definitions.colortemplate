@@ -125,11 +125,11 @@ CommandMode       red    none         reverse
 ;}}}
 
 ;NeoVim     {{{
-TermCursor        ->         Cursor
-TermCursorNC      ->         CursorColumn
-NormalFloat       ->         Pmenu
-FloatBorder       ->         Normal
-NormalNC          frgrd_3 none
+TermCursor   ->      Cursor
+TermCursorNC ->      CursorColumn
+NormalFloat  frgrd_2 none
+FloatBorder  ->      NormalFloat
+NormalNC     frgrd_3 none
 ;}}}
 
 ;Floaterm {{{
