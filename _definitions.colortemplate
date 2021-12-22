@@ -62,7 +62,7 @@ SpecialKey     ->           SignColumn
 SpellBad       red          bkgrd_1 s=red     t=underline g=undercurl
 SpellCap       green        bkgrd_1 s=red     t=underline g=undercurl
 SpellLocal     blue         bkgrd_1 s=red     t=underline g=undercurl
-SpellRare      yellow       bkgrd_1 s=red     t=underline g=undercurl
+SpellRare      cyan         bkgrd_1 s=red     t=underline g=undercurl
 
 StatusLine     frgrd_0      none
 StatusLineNC   grey         none
