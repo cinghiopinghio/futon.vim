@@ -6,17 +6,16 @@ Variant: 256 8 2
 #if get(g:, '@optionprefix_transp_bg', 0)
 Variant: gui 256 8 2
     Normal       frgrd_0  none
-    CursorLineNr accent none
     FoldColumn   grey   none
     Terminal     frgrd_0  none
 #else
     Normal       frgrd_0  bkgrd_0
-    CursorLineNr accent bkgrd_1
     FoldColumn   grey   bkgrd_1
     Terminal     frgrd_0  bkgrd_0
 #endif
 ;Group              Foreground        Background        Attributes
 LineNr       grey    bkgrd_1
+CursorLineNr accent  bkgrd_3
 ColorColumn  none    bkgrd_1
 CursorColumn ->      ColorColumn
 CursorLine   ->      ColorColumn
@@ -57,7 +56,8 @@ PmenuSel       frgrd_0      accent
 PmenuThumb     none         orange
 WildMenu       orange       none
 
-SignColumn     grey         bkgrd_1
+SignColumn          grey    bkgrd_1
+
 SpecialKey     ->           SignColumn
 SpellBad       red          bkgrd_1 s=red     t=underline g=undercurl
 SpellCap       green        bkgrd_1 s=red     t=underline g=undercurl
