@@ -130,6 +130,16 @@ TermCursorNC ->      CursorColumn
 NormalFloat  frgrd_2 none
 FloatBorder  ->      NormalFloat
 NormalNC     frgrd_3 none
+
+DiagnosticSignError red     bkgrd_1
+DiagnosticSignWarn  yellow  bkgrd_1
+DiagnosticSignInfo  frgrd_0 bkgrd_1
+DiagnosticSignHint  frgrd_2 bkgrd_1
+
+DiagnosticError red     none
+DiagnosticWarn  yellow  none
+DiagnosticInfo  frgrd_0 none
+DiagnosticHint  frgrd_2 none
 ;}}}
 
 ;Floaterm {{{
@@ -147,22 +157,27 @@ markdownError -> Error
 texItalStyle none none italic
 ;}}}
 
-;{{{ Neovim LSP
-LspDiagnosticsDefaultError        ->     Error
-LspDiagnosticsDefaultTextError    ->     Error
-LspDiagnosticsDefaultWarning      ->     Warning
-LspDiagnosticsDefaultInformation frgrd_1  bkgrd_1
-LspDiagnosticsDefaultHint         frgrd_3 bkgrd_1
+;Neovim LSP {{{
+DiagnosticError                  red     none
+DiagnosticWarn                   yellow  none
+DiagnosticInfo                   frgrd_4 none
+DiagnosticHint                   frgrd_4 none
 
-LspDiagnosticsFloatingError       red    none
-LspDiagnosticsFloatingWarning     yellow none
-LspDiagnosticsFloatingInformation frgrd_1 none
-LspDiagnosticsFloatingHint        frgrd_3 none
+DiagnosticUnderlineError         none    none undercurl guisp=red
+DiagnosticUnderlineWarn          none    none undercurl guisp=yellow
+DiagnosticUnderlineInfo          none    none undercurl guisp=frgrd_4
+DiagnosticUnderlineHint          none    none undercurl guisp=frgrd_4
 
-LspDiagnosticsVirtualTextError       red    none
-LspDiagnosticsVirtualTextWarning     yellow none
-LspDiagnosticsVirtualTextInformation frgrd_1 none
-LspDiagnosticsVirtualTextHint        frgrd_3 none
+DiagnosticFloatingError          red     none
+DiagnosticFloatingWarn           yellow  none
+DiagnosticFloatingInfo           frgrd_4 none
+DiagnosticFloatingHint           frgrd_4 none
+
+DiagnosticVirtualTextError       red     none
+DiagnosticVirtualTextWarn        yellow  none
+DiagnosticVirtualTextInfo        frgrd_4 none
+DiagnosticVirtualTextHint        frgrd_4 none
+
 ;}}}
 
 ;{{{ TreeSitter
