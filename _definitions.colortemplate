@@ -234,7 +234,7 @@ TSStringEscape -> TSPunctSpecial
 
 ; nvim-cmp {{{
 
-CmpItemAbbr           ->      Normal
+CmpItemAbbr           frgrd_0 none
 CmpItemAbbrDeprecated ->      CmpItemAbbr
 CmpItemAbbrMatch      accent  none
 CmpItemAbbrMatchFuzzy ->      CmpItemAbbrMatch
@@ -243,7 +243,7 @@ CmpItemKindSnippet    cyan    none
 CmpItemKindClass      green   none bold
 CmpItemKindFunction   ->      CmpItemKindClass
 CmpItemKindVariable   magenta none
-CmpItemMenu red none
+CmpItemMenu           red     none
 
 ;}}}
 
