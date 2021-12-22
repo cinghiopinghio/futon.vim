@@ -218,6 +218,15 @@ TSPunctBracket    ->      Delimiter
 
 TSWarning         ->      Warning
 
+TSTitle none none bold
+TSLiteral accent none
+TSEmphasis none none italic
+TSStrong none none bold
+TSURI xlcyan none underline
+TSTextReference frgrd_2 none
+TSPunctSpecial -> TSPunctSpecial
+TSStringEscape -> TSPunctSpecial
+
 ;}}}
 
 ;{{{ Python
