@@ -3,36 +3,33 @@
 
 Color: grey        #767676 ~ DarkGray
 Color: accent      #9b73a8 ~ Magenta
-Color: xdaccent      #b192bc ~ Magenta
-Color: xlaccent      #82598f ~ DarkMagenta
+Color: xdaccent    #b192bc ~ DarkMagenta
+Color: xlaccent    #82598f ~ Magenta
+Color: secondary   #d79921 ~ Yellow
+Color: xdsecondary #e3ae48 ~ DarkYellow
+Color: xlsecondary #ab7a1a ~ Yellow
 
 Color: red        #cc3033 ~ Red
-Color: green      #7c981f ~ Green
-Color: yellow     #d79921 ~ Yellow
+Color: green      #519b31 ~ Green
 Color: blue       #5585a8 ~ Blue
-Color: magenta    #9b73a8 ~ Magenta
+Color: yellow     #d79921 ~ Yellow
 Color: cyan       #59a6a6 ~ Cyan
-Color: orange     #d65d0e ~ Gray
-
-
+Color: magenta    #9b73a8 ~ Magenta
+Color: orange     #d65d0e ~ Red
 Color: xdred        #d8575a ~ DarkRed
-Color: xdgreen      #9fc228 ~ DarkGreen
-Color: xdyellow     #e3ae48 ~ DarkYellow
+Color: xdgreen      #65c23d ~ DarkGreen
 Color: xdblue       #769dba ~ DarkBlue
-Color: xdmagenta    #b192bc ~ DarkMagenta
+Color: xdyellow     #e3ae48 ~ DarkYellow
 Color: xdcyan       #7ab8b8 ~ DarkCyan
-Color: xdorange     #f17626 ~ DarkGray
-
-
+Color: xdmagenta    #b192bc ~ DarkMagenta
+Color: xdorange     #f17626 ~ DarkRed
 Color: xlred        #a32629 ~ Red
-Color: xlgreen      #596e16 ~ Green
-Color: xlyellow     #ab7a1a ~ Yellow
+Color: xlgreen      #3d7425 ~ Green
 Color: xlblue       #446a86 ~ Blue
-Color: xlmagenta    #82598f ~ Magenta
+Color: xlyellow     #ab7a1a ~ Yellow
 Color: xlcyan       #478585 ~ Cyan
-Color: xlorange     #a6480b ~ Gray
-
-
+Color: xlmagenta    #82598f ~ Magenta
+Color: xlorange     #a6480b ~ Red
 ; Backgrounds
 Color: bkgrd_0 #eeeeee ~ White
 Color: bkgrd_1 #d6d6d6 ~ Gray
@@ -49,7 +46,8 @@ Color: frgrd_3 #525252 ~ DarkGray
 Color: frgrd_4 #646464 ~ DarkGray
 
 
-Term Colors: bkgrd_0 red green yellow blue magenta orange frgrd_2
+
+Term Colors: bkgrd_0 red green yellow blue magenta cyan frgrd_2
 Term Colors: bkgrd_2 xdred xdgreen xdyellow xdblue xdmagenta xdcyan frgrd_0
 
 Include: _definitions.colortemplate

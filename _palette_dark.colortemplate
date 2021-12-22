@@ -3,36 +3,33 @@
 
 Color: grey        #767676 ~ DarkGray
 Color: accent      #9b73a8 ~ Magenta
-Color: xdaccent      #82598f ~ DarkMagenta
-Color: xlaccent      #b192bc ~ Magenta
+Color: xdaccent    #82598f ~ DarkMagenta
+Color: xlaccent    #b192bc ~ Magenta
+Color: secondary   #d79921 ~ Yellow
+Color: xdsecondary #ab7a1a ~ DarkYellow
+Color: xlsecondary #e3ae48 ~ Yellow
 
 Color: red        #cc3033 ~ Red
-Color: green      #7c981f ~ Green
-Color: yellow     #d79921 ~ Yellow
+Color: green      #519b31 ~ Green
 Color: blue       #5585a8 ~ Blue
-Color: magenta    #9b73a8 ~ Magenta
+Color: yellow     #d79921 ~ Yellow
 Color: cyan       #59a6a6 ~ Cyan
-Color: orange     #d65d0e ~ Gray
-
-
+Color: magenta    #9b73a8 ~ Magenta
+Color: orange     #d65d0e ~ Red
 Color: xdred        #a32629 ~ DarkRed
-Color: xdgreen      #596e16 ~ DarkGreen
-Color: xdyellow     #ab7a1a ~ DarkYellow
+Color: xdgreen      #3d7425 ~ DarkGreen
 Color: xdblue       #446a86 ~ DarkBlue
-Color: xdmagenta    #82598f ~ DarkMagenta
+Color: xdyellow     #ab7a1a ~ DarkYellow
 Color: xdcyan       #478585 ~ DarkCyan
-Color: xdorange     #a6480b ~ Gray
-
-
+Color: xdmagenta    #82598f ~ DarkMagenta
+Color: xdorange     #a6480b ~ DarkRed
 Color: xlred        #d8575a ~ Red
-Color: xlgreen      #9fc228 ~ Green
-Color: xlyellow     #e3ae48 ~ Yellow
+Color: xlgreen      #65c23d ~ Green
 Color: xlblue       #769dba ~ Blue
-Color: xlmagenta    #b192bc ~ Magenta
+Color: xlyellow     #e3ae48 ~ Yellow
 Color: xlcyan       #7ab8b8 ~ Cyan
-Color: xlorange     #f17626 ~ DarkGray
-
-
+Color: xlmagenta    #b192bc ~ Magenta
+Color: xlorange     #f17626 ~ Red
 ; Backgrounds
 Color: bkgrd_0 #1c1c1c ~ Black
 Color: bkgrd_1 #2e2e2e ~ DarkGray
@@ -47,6 +44,7 @@ Color: frgrd_1 #d6d6d6 ~ Gray
 Color: frgrd_2 #bebebe ~ Gray
 Color: frgrd_3 #a6a6a6 ~ Gray
 Color: frgrd_4 #8e8e8e ~ Gray
+
 
 
 Term Colors: bkgrd_0 red green yellow blue magenta cyan frgrd_2
