@@ -64,8 +64,8 @@ SpellCap       green        bkgrd_1 s=red     t=underline g=undercurl
 SpellLocal     blue         bkgrd_1 s=red     t=underline g=undercurl
 SpellRare      cyan         bkgrd_1 s=red     t=underline g=undercurl
 
-StatusLine     frgrd_0      none
-StatusLineNC   grey         none
+StatusLine     frgrd_0      bkgrd_0
+StatusLineNC   grey         bkgrd_0
 TabLine        grey         none
 TabLineFill    grey         none
 TabLineSel     none         accent  bold
@@ -127,7 +127,7 @@ CommandMode       red    none         reverse
 ;NeoVim     {{{
 TermCursor   ->      Cursor
 TermCursorNC ->      CursorColumn
-NormalFloat  frgrd_2 none
+NormalFloat  frgrd_2 bkgrd_0
 FloatBorder  ->      NormalFloat
 NormalNC     frgrd_3 none
 ;}}}
@@ -143,6 +143,10 @@ IndentBlanklineSpaceChar -> Whitespace
 IndentBlanklineSpaceCharBlankline -> Whitespace
 IndentBlanklineContextChar -> Conceal
 IndentBlanklineContextStart none none underline guisp=accent
+;}}}
+
+;{{{ Beacon
+Beacon none frgrd_0
 ;}}}
 
 ;Markdown {{{
@@ -236,9 +240,9 @@ TSStringEscape -> TSPunctSpecial
 
 CmpItemAbbr           frgrd_0 none
 CmpItemAbbrDeprecated ->      CmpItemAbbr
-CmpItemAbbrMatch      accent  none
+CmpItemAbbrMatch      accent  none bold
 CmpItemAbbrMatchFuzzy ->      CmpItemAbbrMatch
-CmpItemKind           ->      Comment
+CmpItemKind           frgrd_2 none
 CmpItemKindSnippet    cyan    none
 CmpItemKindClass      green   none bold
 CmpItemKindFunction   ->      CmpItemKindClass
@@ -267,4 +271,5 @@ htmlEndTag        ->         htmlTag
 htmlSpecialTagName        ->         htmlTag
 gitcommitSummary  ->         Title
 ;}}}
+
 ; vim: fdm=marker
