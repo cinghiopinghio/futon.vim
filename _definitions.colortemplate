@@ -22,7 +22,7 @@ CursorLine   ->      ColorColumn
 Cursor       frgrd_0 accent
 Conceal      accent  none
 
-Folded         grey         bkgrd_1 italic
+Folded         none      bkgrd_1
 
 DiffAdd        green        none    reverse
 DiffChange     yellow       none    reverse
@@ -33,10 +33,10 @@ diffRemoved    ->           DiffDelete
 
 EndOfBuffer    bkgrd_1      none
 
-Error          red          bkgrd_0 reverse
-ErrorMsg       ->           Error
-Warning        yellow       bkgrd_0 reverse
-WarningMsg     ->           Warning
+Error      none red
+ErrorMsg   ->   Error
+Warning    none yellow
+WarningMsg ->   Warning
 
 IncSearch      orange       none    t=reverse g=standout
 MatchParen     frgrd_0      grey underline
@@ -58,11 +58,10 @@ WildMenu       orange       none
 
 SignColumn          grey    bkgrd_1
 
-SpecialKey     ->           SignColumn
-SpellBad       red          bkgrd_1 s=red     t=underline g=undercurl
-SpellCap       green        bkgrd_1 s=red     t=underline g=undercurl
-SpellLocal     blue         bkgrd_1 s=red     t=underline g=undercurl
-SpellRare      cyan         bkgrd_1 s=red     t=underline g=undercurl
+SpellBad       red          none   undercurl
+SpellCap       green        none   undercurl
+SpellLocal     blue         none   undercurl
+SpellRare      cyan         none   undercurl
 
 StatusLine     frgrd_0      bkgrd_0
 StatusLineNC   grey         bkgrd_0
@@ -87,6 +86,7 @@ String         ->           Constant
 Special        frgrd_4         none    bold
 SpecialChar    ->           Special
 SpecialComment ->           Special
+SpecialKey     ->           SignColumn
 Delimiter      ->           Special
 Debug          ->           Special
 
@@ -160,7 +160,7 @@ texItalStyle none none italic
 ;}}}
 
 ;Neovim LSP {{{
-DiagnosticError            red     none
+DiagnosticError            red     none undercurl guisp=red
 DiagnosticWarn             yellow  none
 DiagnosticInfo             frgrd_4 none
 DiagnosticHint             frgrd_4 none
@@ -211,7 +211,7 @@ TSOperator        frgrd_3 none
 TSVariableBuiltin ->      TSOperator
 TSConstBuiltin    ->      TSOperator
 
-TSLabel           grey    none italic
+TSLabel           frgrd_4    none
 TSConditional     ->      TSLabel
 TSInclude         ->      TSLabel
 TSKeyword         ->      TSLabel
@@ -233,6 +233,52 @@ TSURI xlcyan none underline
 TSTextReference frgrd_2 none
 TSPunctSpecial -> TSPunctSpecial
 TSStringEscape -> TSPunctSpecial
+
+; new
+
+@constant        ->      Constant
+@constant.macro      ->      Constant
+@number          ->      Number
+@float           ->      Float
+@boolean         ->      Boolean
+@character       ->      Character
+@string          ->      String
+@string.regex     ->      String
+@string.escape    ->      String
+
+@variable        frgrd_0 none bold
+
+@function        yellow  none bold
+@class           ->      @function
+
+@method          frgrd_2 none
+@field           ->      @method
+
+@operator        frgrd_3 none
+@variable.builtin ->      @operator
+@constant.builtin    ->      @operator
+
+@label           frgrd_4    none
+@conditional     ->      @label
+@include         ->      @label
+@keyword         ->      @label
+@keyword.function ->      @label
+@keyword.operator ->      @label
+@repeat          ->      @label
+
+@constructor     xlcyan  none
+@punctuation.delimeter  ->      Delimiter
+@punctuation.bracket    ->      Delimiter
+
+@warning         ->      Warning
+
+@title none none bold
+@literal accent none
+@emphasis none none italic
+@strong none none bold
+@uri xlcyan none underline
+@text.reference frgrd_2 none
+@string.escape -> @punctuation.special
 
 ;}}}
 
@@ -272,4 +318,4 @@ htmlSpecialTagName        ->         htmlTag
 gitcommitSummary  ->         Title
 ;}}}
 
-; vim: fdm=marker
+; vim: fdm=marker ft=colortemplate

@@ -1,4 +1,4 @@
-*futon.txt*	For Vim version 8.0	Last change: 2022 Feb 15
+*futon.txt*	For Vim version 8.0	Last change: 2022 May 23
 
 
 		Futon color scheme    by Cinghio
